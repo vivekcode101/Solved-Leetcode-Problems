@@ -13,13 +13,13 @@ public:
             {
                 return 1;
             }
-            if(element<target)
+            if(element>target)
             {
-                start = mid+1;
+                end = mid-1;
             }
             else
             {
-                end = mid-1;
+                start = mid+1;
                 
             }
             mid = start+(end-start)/2;
