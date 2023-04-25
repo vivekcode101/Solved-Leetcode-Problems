@@ -27,11 +27,7 @@ public:
         curr=next;
         cnt++;
     }
-    // if(next!=NULL)
-    // {
-    //     head->next=reverseKGroup(next,k);
-    // }
-    // return prev;
+   
         if (cnt < k) {
         curr = prev;
         prev = NULL;
@@ -43,14 +39,19 @@ public:
         }
         return prev;
     }
-    ListNode* temp = NULL;
-    ListNode* tail = head;
-    while (tail->next != curr && tail->next!=NULL) {
-        temp = tail;
-        tail = tail->next;
+         if(next!=NULL)
+    {
+        head->next=reverseKGroup(next,k);
     }
-    tail->next = reverseKGroup(curr, k);
     return prev;
+    // ListNode* temp = NULL;
+    // ListNode* tail = head;
+    // while (tail->next != curr && tail->next!=NULL) {
+    //     temp = tail;
+    //     tail = tail->next;
+    // }
+    // tail->next = reverseKGroup(curr, k);
+    // return prev;
         
     }
    
