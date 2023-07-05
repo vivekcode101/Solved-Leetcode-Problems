@@ -1,3 +1,30 @@
+// class Solution {
+// public:
+//     bool checkjump(vector<int>& nums, int i)
+//     {
+//         int jump = nums[i];
+//         if (jump == 0 && i != nums.size() - 1)
+//         {
+//             return false;
+//         }
+//         else if (jump > 0)
+//         {
+//             i++;
+//             if (!checkjump(nums, i))
+//             {
+//                 return false;
+//             }
+//         }
+//         return true;
+//     }
+
+//     bool canJump(vector<int>& nums) {
+//         int i = 0;
+//         bool ans = checkjump(nums, i);
+//         return ans;
+//     }
+// };
+
 class Solution {
 public:
     bool canJump(vector<int>& nums) {
