@@ -1,7 +1,7 @@
 class Solution {
 public:
     string reorganizeString(string s) {
-         map<int, int>count;
+        unordered_map<int, int>count;
     for (auto c : s) {
         count[c]++;
     }
